@@ -1,0 +1,13 @@
+{
+  "main.css": "/unemployment/static/css/main.c7dd7ccf.chunk.css",
+  "main.js": "/unemployment/static/js/main.562dc677.chunk.js",
+  "main.js.map": "/unemployment/static/js/main.562dc677.chunk.js.map",
+  "static/js/1.d8b8cbf5.chunk.js": "/unemployment/static/js/1.d8b8cbf5.chunk.js",
+  "static/js/1.d8b8cbf5.chunk.js.map": "/unemployment/static/js/1.d8b8cbf5.chunk.js.map",
+  "runtime~main.js": "/unemployment/static/js/runtime~main.a00d22be.js",
+  "runtime~main.js.map": "/unemployment/static/js/runtime~main.a00d22be.js.map",
+  "static/css/main.c7dd7ccf.chunk.css.map": "/unemployment/static/css/main.c7dd7ccf.chunk.css.map",
+  "index.html": "/unemployment/index.html",
+  "precache-manifest.36eeb38b30c73bd9c145871e0c15ae0d.js": "/unemployment/precache-manifest.36eeb38b30c73bd9c145871e0c15ae0d.js",
+  "service-worker.js": "/unemployment/service-worker.js"
+}
