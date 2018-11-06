@@ -1,0 +1,5 @@
+@import '../mixins';
+
+.last-name-text-field {
+  @include identification-text-field;
+}

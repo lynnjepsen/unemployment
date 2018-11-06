@@ -1,12 +1,5 @@
-@import '@material/react-text-field/index.scss';
-@import '@material/textfield/mixins';
-@import '../../color-palette';
+@import '../mixins';
 
 .license-number-text-field {
-  @include mdc-text-field-hover-outline-color($blue-400);
-  @include mdc-text-field-focused-outline-color($blue-700);
-
-  &.mdc-text-field--focused {
-    @include mdc-text-field-label-color($blue-700);
-  }
+  @include identification-text-field;
 }

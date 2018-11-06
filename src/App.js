@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './typography.scss';
 import SessionProgress from './session-progress';
 import Identification from './identification';
 import './App.scss';

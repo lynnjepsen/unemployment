@@ -2,8 +2,12 @@ $mdc-typography-font-family: unquote("Raleway, sans-serif");
 $mdc-typography-styles-headline-6: (
   font-size: 20px,
 );
+$mdc-typography-styles-subtitle-1: (
+  font-size: 16px,
+);
 $mdc-typography-styles-body-2: (
   font-size: 14px,
 );
 
 @import "@material/typography/mdc-typography";
+@import '@material/textfield/mdc-text-field';

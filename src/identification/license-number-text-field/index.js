@@ -6,17 +6,18 @@ class LicenseNumberTextField extends Component {
   state = {value: ''};
 
   render() {
-    const className = "license-number-text-field "+this.props.className;
     return (
-      <TextField
-        className={className}
-        outlined
-        label='License #'
-        helperText={<HelperText persistent>What is your license number?</HelperText>}>
-        <Input
-          value={this.state.value}
-          onChange={(e) => this.setState({value: e.target.value})}/>
-      </TextField>
+      <div className={this.props.className}>
+        <TextField
+          className="license-number-text-field"
+          outlined
+          label='License #'
+          helperText={<HelperText persistent>What is your license number?</HelperText>}>
+          <Input
+            value={this.state.value}
+            onChange={(e) => this.setState({value: e.target.value})}/>
+        </TextField>
+      </div>
     );
   }
 }

@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import Checkbox from './checkbox';
 import './index.scss';
-import '../../typography.scss';
 
 class Document extends Component {
   render() {

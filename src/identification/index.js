@@ -4,7 +4,6 @@ import LicenseNumberTextField from './license-number-text-field';
 import FirstNameTextField from './first-name-text-field';
 import LastNameTextField from './last-name-text-field';
 import AddressTextField from './address-text-field';
-import '../typography.scss';
 import './index.scss';
 
 class Identification extends Component {
@@ -23,10 +22,10 @@ class Identification extends Component {
         <div className="identification__document-name  mdc-typography--headline6">Drivers License</div>
         <LicenseNumberTextField className="identification__license-number"/>
         <div className="identification__name-form">
-          <FirstNameTextField/>
-          <LastNameTextField/>
+          <FirstNameTextField className="identification__first-name"/>
+          <LastNameTextField  className="identification__last-name"/>
         </div>
-        <AddressTextField/>
+        <AddressTextField className="identification__address"/>
       </div>
     );
   }

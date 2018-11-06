@@ -1,0 +1,5 @@
+@import '../mixins';
+
+.address-text-field {
+  @include identification-text-field;
+}
