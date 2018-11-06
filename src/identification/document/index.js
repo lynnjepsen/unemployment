@@ -7,8 +7,8 @@ class Document extends Component {
   render() {
     return (
       <div className="document">
-        <Checkbox id="document-checkbox"/>
-        <label for="document-checkbox" className="document__name mdc-typography--body2">{this.props.name}</label>
+        <Checkbox id={this.props.id}/>
+        <label htmlFor={this.props.id} className="document__name mdc-typography--body2">{this.props.name}</label>
       </div>
     );
   }

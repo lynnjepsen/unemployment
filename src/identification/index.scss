@@ -25,5 +25,10 @@
 
 .identification__document-name {
   @include mdc-typography-baseline-top(64px);
+  @include mdc-typography-baseline-bottom(24px);
   color: $blue-900;
+}
+
+.identification__license-number {
+  margin-top: 32px;
 }
