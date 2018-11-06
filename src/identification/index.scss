@@ -1,1 +1,19 @@
+@import '../color-palette';
 
+.identification {
+  background-color: #FFFFFF;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.identification__title {
+  color: $blue-900;
+}
+
+.identification__paragraph {
+  color: rgba(0,0,0, .60);
+}
+
+.identification__document-name {
+  color: $blue-900;
+}
