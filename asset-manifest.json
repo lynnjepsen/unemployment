@@ -1,14 +1,14 @@
 {
-  "main.css": "/unemployment/static/css/main.338ea0c6.chunk.css",
-  "main.js": "/unemployment/static/js/main.79c5adfc.chunk.js",
-  "main.js.map": "/unemployment/static/js/main.79c5adfc.chunk.js.map",
-  "static/js/1.bfaa8f49.chunk.js": "/unemployment/static/js/1.bfaa8f49.chunk.js",
-  "static/js/1.bfaa8f49.chunk.js.map": "/unemployment/static/js/1.bfaa8f49.chunk.js.map",
+  "main.css": "/unemployment/static/css/main.0be4fe60.chunk.css",
+  "main.js": "/unemployment/static/js/main.24662c38.chunk.js",
+  "main.js.map": "/unemployment/static/js/main.24662c38.chunk.js.map",
+  "static/js/1.0e54753c.chunk.js": "/unemployment/static/js/1.0e54753c.chunk.js",
+  "static/js/1.0e54753c.chunk.js.map": "/unemployment/static/js/1.0e54753c.chunk.js.map",
   "runtime~main.js": "/unemployment/static/js/runtime~main.a00d22be.js",
   "runtime~main.js.map": "/unemployment/static/js/runtime~main.a00d22be.js.map",
   "static/media/logo.svg": "/unemployment/static/media/logo.66e8af9c.svg",
-  "static/css/main.338ea0c6.chunk.css.map": "/unemployment/static/css/main.338ea0c6.chunk.css.map",
+  "static/css/main.0be4fe60.chunk.css.map": "/unemployment/static/css/main.0be4fe60.chunk.css.map",
   "index.html": "/unemployment/index.html",
-  "precache-manifest.95ff1a1ed85b2e94b2eace8ac626a5cb.js": "/unemployment/precache-manifest.95ff1a1ed85b2e94b2eace8ac626a5cb.js",
+  "precache-manifest.e04d4cd195fa508979a0210661ad2a9a.js": "/unemployment/precache-manifest.e04d4cd195fa508979a0210661ad2a9a.js",
   "service-worker.js": "/unemployment/service-worker.js"
 }
