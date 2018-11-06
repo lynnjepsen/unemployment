@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <g id="logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-14" fill-rule="nonzero">
+            <rect id="Rectangle-Copy-14" fill="#C0C6DE" x="0" y="0" width="40" height="40" rx="20"></rect>
+            <g id="Group-14-Copy" transform="translate(10.181818, 6.545455)">
+                <rect id="Rectangle" fill="#101F5D" x="0" y="7.10542736e-15" width="18.9090909" height="8.68571429" rx="4.34285714"></rect>
+                <path d="M-4.9038961,9.36103896 L13.8181818,9.36103896 C16.2797938,9.36103896 18.2753247,11.3565698 18.2753247,13.8181818 L18.2753247,13.8181818 C18.2753247,16.2797938 16.2797938,18.2753247 13.8181818,18.2753247 L-4.9038961,18.2753247 C-7.36550813,18.2753247 -9.36103896,16.2797938 -9.36103896,13.8181818 L-9.36103896,13.8181818 C-9.36103896,11.3565698 -7.36550813,9.36103896 -4.9038961,9.36103896 Z" id="Rectangle-Copy-13" fill="#143889" transform="translate(4.457143, 13.818182) rotate(-90.000000) translate(-4.457143, -13.818182) "></path>
+                <rect id="Rectangle-Copy-12" fill="#6E7EB4" style="mix-blend-mode: multiply;" x="0" y="8.60377358" width="18.9090909" height="8.60377358" rx="4.30188679"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
