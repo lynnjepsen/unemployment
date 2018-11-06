@@ -5,9 +5,7 @@ import './index.scss';
 class Logo extends Component {
   render() {
     return (
-      <div className="logo">
-        <logo/>
-      </div>
+      <img src={logo} className="logo" alt="logo" />
     );
   }
 }
