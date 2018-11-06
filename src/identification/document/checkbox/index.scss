@@ -1,0 +1,9 @@
+@import '@material/react-checkbox/index.scss';
+@import '@material/checkbox/mixins';
+@import '@material/ripple/mixins';
+@import '../../../color-palette';
+
+.checkbox {
+  @include mdc-checkbox-container-colors($blue-700, white, $blue-700, $blue-700);
+  @include mdc-states($blue-700);
+}

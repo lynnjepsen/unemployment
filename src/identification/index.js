@@ -13,11 +13,14 @@ class Identification extends Component {
       <div className="identification">
         <div className="identification__title mdc-typography--headline6">Identification</div>
         <div className="identification__paragraph mdc-typography--body2">What identification documents have you brought with you?</div>
-        <Document/>
-        <Document/>
-        <Document/>
-        <Document/>
-        <div className="identification__document-name  mdc-typography--headline6">Divers License</div>
+        <div className="identification__documents">
+          <Document name="Drivers License"/>
+          <Document name="ID card"/>
+          <Document name="Social Security Card"/>
+          <Document name="Work Permit"/>
+          <Document name="Visa"/>
+        </div>
+        <div className="identification__document-name  mdc-typography--headline6">Drivers License</div>
         <LicenseNumberTextField/>
         <div className="identification__name-form">
           <FirstNameTextField/>
