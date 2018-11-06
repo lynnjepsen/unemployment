@@ -1,3 +1,4 @@
+@import "@material/typography/mixins";
 @import '../color-palette';
 
 .identification {
@@ -7,10 +8,13 @@
 }
 
 .identification__title {
+  @include mdc-typography-baseline-top(72px);
+  @include mdc-typography-baseline-bottom(16px)
   color: $blue-900;
 }
 
 .identification__paragraph {
+  @include mdc-typography-baseline-top(64px);
   color: rgba(0,0,0, .60);
 }
 
