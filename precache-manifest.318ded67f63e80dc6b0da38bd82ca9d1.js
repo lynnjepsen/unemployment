@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/unemployment/static/js/runtime~main.a00d22be.js"
   },
   {
-    "revision": "8d677027d9917598c778",
-    "url": "/unemployment/static/js/main.8d677027.chunk.js"
+    "revision": "f60b60ef935425dfb1e1",
+    "url": "/unemployment/static/js/main.f60b60ef.chunk.js"
   },
   {
     "revision": "92165c3dc07a5c440028",
     "url": "/unemployment/static/js/1.92165c3d.chunk.js"
   },
   {
-    "revision": "8d677027d9917598c778",
-    "url": "/unemployment/static/css/main.b036561c.chunk.css"
+    "revision": "f60b60ef935425dfb1e1",
+    "url": "/unemployment/static/css/main.abd489e6.chunk.css"
   },
   {
-    "revision": "0ffe8dad5945f6073a3f40ff76dc28dd",
+    "revision": "2bb4e912b5cbe40902565b2dc6f002a0",
     "url": "/unemployment/index.html"
   }
 ];
