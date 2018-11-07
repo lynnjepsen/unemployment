@@ -1,9 +1,9 @@
-@import '../mixins';
+@import '../../mixins';
 
 .mdc-text-field {
   width: 100%;
 }
 
-.license-number-text-field {
+.address-text-field {
   @include identification-text-field;
 }

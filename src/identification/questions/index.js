@@ -1,9 +1,6 @@
 import React, {Component} from 'react';
 import Document from '../document';
-import LicenseNumberTextField from '../license-number-text-field';
-import FirstNameTextField from '../first-name-text-field';
-import LastNameTextField from '../last-name-text-field';
-import AddressTextField from '../address-text-field';
+import DriversLicense from '../drivers-license';
 import './index.scss';
 
 class Questions extends Component {
@@ -21,12 +18,7 @@ class Questions extends Component {
           <Document name="Visa" id="visa"/>
         </div>
         <div className="questions__document-name  mdc-typography--headline6">Drivers License</div>
-        <LicenseNumberTextField className="questions__license-number"/>
-        <div className="questions__name-form">
-          <FirstNameTextField className="questions__first-name"/>
-          <LastNameTextField  className="questions__last-name"/>
-        </div>
-        <AddressTextField className="questions__address"/>
+        <DriversLicense/>
       </div>
     );
   }

@@ -1,0 +1,9 @@
+
+$layout-margin: 108px;
+$total-column-count: 9;
+$layout-gutter: 16px;
+
+@mixin column-based-width($column-count) {
+  $negative-space: $layout-margin + ($layout-gutter * ($total-column-count - 1));
+  width: calc(((100% - #{$negative-space})/#{$total-column-count / $column-count}) + #{($column-count - 1) * $layout-gutter});
+}

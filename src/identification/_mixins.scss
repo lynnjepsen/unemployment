@@ -1,5 +1,5 @@
 @import '@material/textfield/mixins';
-@import '../../color-palette';
+@import '../color-palette';
 
 @mixin identification-text-field {
   @include mdc-text-field-hover-outline-color($blue-400);

@@ -1,0 +1,28 @@
+@import '../questions/partial';
+
+.drivers-license__number {
+  margin-left: $layout-margin;
+  @include column-based-width(3);
+  margin-top: 32px;
+}
+
+.drivers-license__name-form {
+  margin-top: 24px;
+  display: flex;
+}
+
+.drivers-license__first-name {
+  margin-left: $layout-margin;
+  @include column-based-width(3);
+}
+
+.drivers-license__last-name {
+  margin-left: 16px;
+  @include column-based-width(3);
+}
+
+.drivers-license__address {
+  margin-left: $layout-margin;
+  margin-top: 16px;
+  @include column-based-width(6);
+}
