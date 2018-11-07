@@ -1,5 +1,9 @@
 @import '../mixins';
 
+.mdc-text-field {
+  width: 100%;
+}
+
 .last-name-text-field {
   @include identification-text-field;
 }
