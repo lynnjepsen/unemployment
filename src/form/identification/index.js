@@ -6,7 +6,7 @@ class Identification extends Component {
   render() {
     return (
       <div className="identification">
-        <div className="identification__title  mdc-typography--headline6">Drivers License</div>
+        <div className="identification__title">Drivers License</div>
         <DriversLicense/>
       </div>
     );
