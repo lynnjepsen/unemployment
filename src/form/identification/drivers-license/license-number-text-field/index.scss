@@ -1,9 +1,0 @@
-@import '../../../questions';
-
-.mdc-text-field {
-  width: 100%;
-}
-
-.license-number-text-field {
-  @include questions-text-field;
-}

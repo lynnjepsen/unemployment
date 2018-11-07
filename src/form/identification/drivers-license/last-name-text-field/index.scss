@@ -1,9 +1,0 @@
-@import '../../../questions';
-
-.mdc-text-field {
-  width: 100%;
-}
-
-.last-name-text-field {
-  @include questions-text-field;
-}

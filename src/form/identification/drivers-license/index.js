@@ -1,8 +1,5 @@
 import React, {Component} from 'react';
-import LicenseNumberTextField from './license-number-text-field';
-import FirstNameTextField from './first-name-text-field';
-import LastNameTextField from './last-name-text-field';
-import AddressTextField from './address-text-field';
+import TextField from '../../text-field';
 import './index.scss';
 
 class DriversLicense extends Component {
@@ -10,12 +7,20 @@ class DriversLicense extends Component {
   render() {
     return (
       <div className="drivers-license">
-        <LicenseNumberTextField className="drivers-license__number"/>
+        <TextField className="drivers-license__number"
+          label="License #"
+          question="What is your drivers license?"/>
         <div className="drivers-license__name-form">
-          <FirstNameTextField className="drivers-license__first-name"/>
-          <LastNameTextField  className="drivers-license__last-name"/>
+          <TextField className="drivers-license__first-name"
+            label="First Name"
+            question="What is your first name?"/>
+          <TextField className="drivers-license__last-name"
+            label="Last Name"
+            question="What is your last name?"/>
         </div>
-        <AddressTextField className="drivers-license__address"/>
+        <TextField className="drivers-license__address"
+          label="Address"
+          question="What is your address?"/>
       </div>
     );
   }
