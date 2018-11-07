@@ -1,0 +1,25 @@
+@import '../typography/variables';
+@import "@material/typography/mixins";
+
+$indicator-size: 16px;
+
+.navigator {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.navigator__question-set {
+  display: flex;
+  align-items: center;
+  max-height: $indicator-size;
+}
+
+.navigator__question-set-name {
+  @include mdc-typography(body2);
+  margin-left: 24px;
+}
+
+.navigator__connector {
+  margin-left: $indicator-size/2;
+}

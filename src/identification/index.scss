@@ -19,28 +19,10 @@ $indicator-size: 16px;
   display: flex;
 }
 
-.indentification__questions {
+.identification__questions {
   @include column-based-width(9);
 }
 
 .identification__navigator {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
   margin-top: 48px;
-}
-
-.identification__question-set {
-  display: flex;
-  align-items: center;
-  max-height: $indicator-size;
-}
-
-.identification__question-set-name {
-  @include mdc-typography(body2);
-  margin-left: 24px;
-}
-
-.identification__connector {
-  margin-left: $indicator-size/2;
 }
