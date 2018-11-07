@@ -1,14 +1,13 @@
 import React, {Component} from 'react';
-import Questions from './questions';
-import Navigator from '../navigator';
+import DriversLicense from './drivers-license';
 import './index.scss';
 
 class Identification extends Component {
   render() {
     return (
       <div className="identification">
-        <Questions className="identification__questions"/>
-        <Navigator className="identification__navigator"/>
+        <div className="identification__title  mdc-typography--headline6">Drivers License</div>
+        <DriversLicense/>
       </div>
     );
   }

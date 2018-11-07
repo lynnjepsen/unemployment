@@ -1,9 +1,9 @@
-@import '../../mixins';
+@import '../../../form/questions';
 
 .mdc-text-field {
   width: 100%;
 }
 
 .address-text-field {
-  @include identification-text-field;
+  @include questions-text-field;
 }

@@ -1,0 +1,26 @@
+@import '../typography/variables';
+@import "@material/typography/mixins";
+
+$layout-margin: 108px;
+$total-column-count: 12;
+$layout-gutter: 16px;
+
+@mixin column-based-width($column-count) {
+  $negative-space: $layout-margin + ($layout-gutter * ($total-column-count - 1));
+  width: calc(((100% - #{$negative-space})/#{$total-column-count / $column-count}) + #{($column-count - 1) * $layout-gutter});
+}
+
+.form {
+  background-color: #FFFFFF;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  display: flex;
+}
+
+.form__questions {
+  @include column-based-width(9);
+}
+
+.form__navigator {
+  margin-top: 48px;
+}

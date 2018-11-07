@@ -1,28 +1,10 @@
-@import '../typography/variables';
 @import "@material/typography/mixins";
+@import '../color-palette';
+@import '../form/questions';
 
-$layout-margin: 108px;
-$total-column-count: 12;
-$layout-gutter: 16px;
-
-@mixin column-based-width($column-count) {
-  $negative-space: $layout-margin + ($layout-gutter * ($total-column-count - 1));
-  width: calc(((100% - #{$negative-space})/#{$total-column-count / $column-count}) + #{($column-count - 1) * $layout-gutter});
-}
-
-$indicator-size: 16px;
-
-.identification {
-  background-color: #FFFFFF;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
-  display: flex;
-}
-
-.identification__questions {
-  @include column-based-width(9);
-}
-
-.identification__navigator {
-  margin-top: 48px;
+.identification__title {
+  margin-left: $questions-layout-margin;
+  @include mdc-typography-baseline-top(64px);
+  @include mdc-typography-baseline-bottom(24px);
+  color: $blue-900;
 }
