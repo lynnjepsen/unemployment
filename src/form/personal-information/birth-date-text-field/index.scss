@@ -1,0 +1,9 @@
+@import '../../questions';
+
+.mdc-text-field {
+  width: 100%;
+}
+
+.birth-date-text-field {
+  @include questions-text-field;
+}

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PersonalInformation from './personal-information';
 import IdentificatonQuestions from './identification';
 import Navigator from './navigator';
 import './index.scss';
@@ -8,6 +9,7 @@ class Form extends Component {
     return (
       <div className="form">
         <div className="form__questions">
+          <PersonalInformation/>
           <IdentificatonQuestions/>
         </div>
         <Navigator className="form__navigator"/>

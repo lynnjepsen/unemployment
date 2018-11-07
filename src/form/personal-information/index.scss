@@ -1,0 +1,7 @@
+@import '../questions';
+
+.personal-information__birth-date {
+  margin-left: $questions-layout-margin;
+  @include questions-column-based-width(3);
+  margin-top: 64px;
+}
