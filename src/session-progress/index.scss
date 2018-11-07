@@ -1,1 +1,11 @@
+.session-progress {
+  margin-bottom: 50px;
 
+  &__section-titles {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+  }
+}

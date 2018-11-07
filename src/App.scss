@@ -1,5 +1,7 @@
 @import './color-palette';
+@import './typography';
 
 .app {
+  font-family: $mdc-typography-font-family;
   background-color: $blue-900;
 }
