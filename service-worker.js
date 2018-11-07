@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/unemployment/precache-manifest.e04d4cd195fa508979a0210661ad2a9a.js"
+  "/unemployment/precache-manifest.fe689aba83ceae48ddf4d84e78a24602.js"
 );
 
 workbox.clientsClaim();
