@@ -1,12 +1,14 @@
 import React, {Component} from 'react';
-import BirthDatTextField from './birth-date-text-field';
+import BirthDateTextField from './birth-date-text-field';
+import GenderTextField from './gender-text-field';
 import './index.scss';
 
 class PersonalInformation extends Component {
   render() {
     return (
       <div className="personal-information">
-        <BirthDatTextField className="personal-information__birth-date"/>
+        <BirthDateTextField className="personal-information__birth-date"/>
+        <GenderTextField className="personal-information__gender"/>
       </div>
     );
   }

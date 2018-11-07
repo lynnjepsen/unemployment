@@ -23,6 +23,6 @@
 
 .drivers-license__address {
   margin-left: $questions-layout-margin;
-  margin-top: 16px;
+  margin-top: 24px;
   @include questions-column-based-width(6);
 }
