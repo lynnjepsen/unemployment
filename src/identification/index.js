@@ -1,31 +1,30 @@
 import React, {Component} from 'react';
-import Document from './document';
-import LicenseNumberTextField from './license-number-text-field';
-import FirstNameTextField from './first-name-text-field';
-import LastNameTextField from './last-name-text-field';
-import AddressTextField from './address-text-field';
+import Questions from './questions';
+import incompleteQuestionSet from './incomplete-question-set.svg';
+import connector from './connector.svg';
 import './index.scss';
 
 class Identification extends Component {
   render() {
     return (
       <div className="identification">
-        <div className="identification__title mdc-typography--headline6">Identification</div>
-        <div className="identification__paragraph mdc-typography--body2">What identification documents have you brought with you?</div>
-        <div className="identification__documents">
-          <Document name="Drivers License" id="drivers-license"/>
-          <Document name="ID card" id="id-card"/>
-          <Document name="Social Security Card" id="social-security-card"/>
-          <Document name="Work Permit" id="work-permit"/>
-          <Document name="Visa" id="visa"/>
+        <Questions className="indentification__questions"/>
+        <div className="identification__navigator">
+          <div className="identification__question-set">
+            <img src={incompleteQuestionSet} className="identification__question-set-indicator" alt="question set indicator" />
+            <span className="identification__question-set-name">Identification</span>
+          </div>
+          <img src={connector} className="identification__connector" alt="connector" />
+          <div className="identification__question-set">
+            <img src={incompleteQuestionSet} className="identification__question-set-indicator" alt="question set indicator" />
+            <span className="identification__question-set-name">Drivers License</span>
+          </div>
+          <img src={connector} className="identification__connector" alt="connector" />
+          <div className="identification__question-set">
+            <img src={incompleteQuestionSet} className="identification__question-set-indicator" alt="question set indicator" />
+            <span className="identification__question-set-name">Social Security Card</span>
+          </div>
         </div>
-        <div className="identification__document-name  mdc-typography--headline6">Drivers License</div>
-        <LicenseNumberTextField className="identification__license-number"/>
-        <div className="identification__name-form">
-          <FirstNameTextField className="identification__first-name"/>
-          <LastNameTextField  className="identification__last-name"/>
-        </div>
-        <AddressTextField className="identification__address"/>
       </div>
     );
   }

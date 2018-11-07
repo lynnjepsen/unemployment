@@ -1,0 +1,66 @@
+@import "@material/typography/mixins";
+@import '../../color-palette';
+
+$layout-margin: 108px;
+$total-column-count: 9;
+$layout-gutter: 16px;
+
+@mixin column-based-width($column-count) {
+  $negative-space: $layout-margin + ($layout-gutter * ($total-column-count - 1));
+  width: calc(((100% - #{$negative-space})/#{$total-column-count / $column-count}) + #{($column-count - 1) * $layout-gutter});
+}
+
+.questions__title {
+  margin-left: $layout-margin;
+  @include mdc-typography-baseline-top(72px);
+  @include mdc-typography-baseline-bottom(16px);
+  color: $blue-900;
+}
+
+.questions__paragraph {
+  margin-left: $layout-margin;
+  @include column-based-width(3);
+  @include mdc-typography-baseline-top(64px);
+  @include mdc-typography-baseline-bottom(24px);
+  color: rgba(0,0,0, .60);
+}
+
+.questions__documents {
+  margin-top: 24px;
+  /* 11px to account for checkbox padding */
+  margin-left: $layout-margin - 11px;
+}
+
+.questions__document-name {
+  margin-left: $layout-margin;
+  @include mdc-typography-baseline-top(64px);
+  @include mdc-typography-baseline-bottom(24px);
+  color: $blue-900;
+}
+
+.questions__license-number {
+  margin-left: $layout-margin;
+  @include column-based-width(3);
+  margin-top: 32px;
+}
+
+.questions__name-form {
+  margin-top: 24px;
+  display: flex;
+}
+
+.questions__first-name {
+  margin-left: $layout-margin;
+  @include column-based-width(3);
+}
+
+.questions__last-name {
+  margin-left: 16px;
+  @include column-based-width(3);
+}
+
+.questions__address {
+  margin-left: $layout-margin;
+  margin-top: 16px;
+  @include column-based-width(6);
+}

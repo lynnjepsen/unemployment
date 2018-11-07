@@ -1,5 +1,5 @@
+@import '../typography/variables';
 @import "@material/typography/mixins";
-@import '../color-palette';
 
 $layout-margin: 108px;
 $total-column-count: 12;
@@ -10,63 +10,37 @@ $layout-gutter: 16px;
   width: calc(((100% - #{$negative-space})/#{$total-column-count / $column-count}) + #{($column-count - 1) * $layout-gutter});
 }
 
+$indicator-size: 16px;
+
 .identification {
   background-color: #FFFFFF;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
-}
-
-.identification__title {
-  margin-left: $layout-margin;
-  @include mdc-typography-baseline-top(72px);
-  @include mdc-typography-baseline-bottom(16px);
-  color: $blue-900;
-}
-
-.identification__paragraph {
-  margin-left: $layout-margin;
-  @include column-based-width(3);
-  @include mdc-typography-baseline-top(64px);
-  @include mdc-typography-baseline-bottom(24px);
-  color: rgba(0,0,0, .60);
-}
-
-.identification__documents {
-  margin-top: 24px;
-  /* 11px to account for checkbox padding */
-  margin-left: $layout-margin - 11px;
-}
-
-.identification__document-name {
-  margin-left: $layout-margin;
-  @include mdc-typography-baseline-top(64px);
-  @include mdc-typography-baseline-bottom(24px);
-  color: $blue-900;
-}
-
-.identification__license-number {
-  margin-left: $layout-margin;
-  @include column-based-width(3);
-  margin-top: 32px;
-}
-
-.identification__name-form {
-  margin-top: 24px;
   display: flex;
 }
 
-.identification__first-name {
-  margin-left: $layout-margin;
-  @include column-based-width(3);
+.indentification__questions {
+  @include column-based-width(9);
 }
 
-.identification__last-name {
-  margin-left: 16px;
-  @include column-based-width(3);
+.identification__navigator {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 48px;
 }
 
-.identification__address {
-  margin-left: $layout-margin;
-  margin-top: 16px;
-  @include column-based-width(6);
+.identification__question-set {
+  display: flex;
+  align-items: center;
+  max-height: $indicator-size;
+}
+
+.identification__question-set-name {
+  @include mdc-typography(body2);
+  margin-left: 24px;
+}
+
+.identification__connector {
+  margin-left: $indicator-size/2;
 }
