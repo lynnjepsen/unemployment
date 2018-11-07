@@ -1,6 +1,6 @@
 @import "@material/typography/mixins";
-@import '../color-palette';
-@import '../form/questions';
+@import '../../color-palette';
+@import '../questions';
 
 .identification__title {
   margin-left: $questions-layout-margin;

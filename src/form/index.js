@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import IdentificatonQuestions from '../identification';
-import Navigator from '../navigator';
+import IdentificatonQuestions from './identification';
+import Navigator from './navigator';
 import './index.scss';
 
 class Form extends Component {

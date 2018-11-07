@@ -1,9 +1,9 @@
-@import '../../../form/questions';
+@import '../../../questions';
 
 .mdc-text-field {
   width: 100%;
 }
 
-.license-number-text-field {
+.last-name-text-field {
   @include questions-text-field;
 }
