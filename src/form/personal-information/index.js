@@ -42,7 +42,7 @@ class PersonalInformation extends Component {
           question="What is your preferred written language?"
           onUserInput={(isUserInput) => this.setState({isBirthdaySet: isUserInput})}/>
         <TextField className="personal-information__telephone-number"
-          label="Telephone Number"
+          label="Telephone #"
           question="What is your telephone number?"
           onUserInput={(isUserInput) => this.setState({isBirthdaySet: isUserInput})}/>
         <TextField className="personal-information__mailing-address"
