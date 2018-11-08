@@ -1,9 +1,9 @@
 @import '../../questions';
 
-.drivers-license__number {
+.drivers-license__birth-date {
   margin-left: $questions-layout-margin;
   @include questions-column-based-width(3);
-  margin-top: 32px;
+  margin-top: 24px;
 }
 
 .drivers-license__name-form {
@@ -21,8 +21,17 @@
   @include questions-column-based-width(3);
 }
 
-.drivers-license__address {
-  margin-left: $questions-layout-margin;
+.drivers-license__issued {
   margin-top: 24px;
-  @include questions-column-based-width(6);
+  display: flex;
+}
+
+.drivers-license__number {
+  margin-left: $questions-layout-margin;
+  @include questions-column-based-width(3);
+}
+
+.drivers-license__state {
+  margin-left: 16px;
+  @include questions-column-based-width(3);
 }

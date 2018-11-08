@@ -1,6 +1,6 @@
 @import '../questions';
 
-.personal-information__birth-date {
+.personal-information__telephone-number {
   margin-left: $questions-layout-margin;
   @include questions-column-based-width(3);
   margin-top: 64px;
@@ -27,12 +27,6 @@
   @include questions-column-based-width(3);
 }
 
-.personal-information__telephone-number {
-  margin-left: $questions-layout-margin;
-  @include questions-column-based-width(3);
-  margin-top: 24px;
-}
-
 .personal-information__mailing-address {
   margin-left: $questions-layout-margin;
   @include questions-column-based-width(6);
@@ -54,7 +48,7 @@
 .personal-information__communication-title {
   margin-left: $questions-layout-margin;
   @include questions-column-based-width(6);
-  margin-top: 24px;
+  margin-top: 40px;
 }
 
 .personal-information__communcation {

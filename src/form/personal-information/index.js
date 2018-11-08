@@ -8,7 +8,6 @@ class PersonalInformation extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isBirthdaySet: false,
       isGenderSet: false,
       isWrittenLanguageSet: false,
       isSpokenLanguageSet: false,
@@ -22,7 +21,6 @@ class PersonalInformation extends Component {
 
   componentDidUpdate(prevProps, prevState) {
     const isComplete = 
-      this.state.isBirthdaySet && 
       this.state.isGenderSet && 
       this.state.isWrittenLanguageSet &&
       this.state.isSpokenLanguageSet &&
@@ -41,10 +39,6 @@ class PersonalInformation extends Component {
   render() {
     return (
       <div className="personal-information">
-        <TextField className="personal-information__birth-date"
-          label="Birth Date (MM / DD / YYYY)"
-          question="When were you born?"
-          onUserInput={(isUserInput) => this.setState({isBirthdaySet: isUserInput})}/>
         <TextField className="personal-information__telephone-number"
           label="Telephone #"
           question="What is your telephone number?"
