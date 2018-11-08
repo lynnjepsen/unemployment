@@ -9,7 +9,8 @@ class Form extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isPersonalInformationComplete: false
+      isPersonalInformationComplete: false,
+      isIdentificationComplete: false
     };
   }
 
@@ -18,9 +19,11 @@ class Form extends Component {
       <div className="form">
         <div className="form__questions">
           <PersonalInformation onComplete={(isComplete) => this.setState({isPersonalInformationComplete: isComplete})}/>
-          <IdentificatonQuestions/>
+          <IdentificatonQuestions  onComplete={(isComplete) => this.setState({isIdentificationComplete: isComplete})}/>
         </div>
-        <Navigator className="form__navigator" isPersonalInformationComplete={this.state.isPersonalInformationComplete}/>
+        <Navigator className="form__navigator" 
+          isPersonalInformationComplete={this.state.isPersonalInformationComplete}
+          isIdentificationComplete={this.state.isIdentificationComplete}/>
       </div>
     );
   }

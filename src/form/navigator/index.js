@@ -48,7 +48,7 @@ class Navigator extends Component {
         </div>
         <img src={connector} className="navigator__connector" alt="connector" />
         <div className="navigator__question-set">
-          <img src={incompleteQuestionSet} className="navigator__question-set-indicator" alt="question set indicator" />
+          {this.renderIdentificationIndictor()}
           <span className="navigator__question-set-name">Identification</span>
         </div>
         <img src={connector} className="navigator__connector" alt="connector" />
@@ -67,6 +67,17 @@ class Navigator extends Component {
 
   renderPersonalInformationIndictor() {
     if (this.props.isPersonalInformationComplete) {
+      return (
+        <img src={completeQuestionSet} className="navigator__question-set-indicator" alt="question set indicator" />
+      );
+    }
+    return (
+      <img src={incompleteQuestionSet} className="navigator__question-set-indicator" alt="question set indicator" />
+    );
+  }
+
+  renderIdentificationIndictor() {
+    if (this.props.isIdentificationComplete) {
       return (
         <img src={completeQuestionSet} className="navigator__question-set-indicator" alt="question set indicator" />
       );
