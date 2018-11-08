@@ -15,7 +15,7 @@ class Form extends Component {
 
   render() {
     return (
-      <div className="form">
+      <div className="form sheet">
         <div className="form__questions">
           <PersonalInformation onComplete={(isComplete) => this.setState({isPersonalInformationComplete: isComplete})}/>
           <IdentificatonQuestions/>

@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import './typography/global-classnames.scss';
 import SessionProgress from './session-progress';
-import Form from './form';
 import './App.scss';
 
 class App extends Component {
@@ -9,7 +8,6 @@ class App extends Component {
     return (
       <div className="app">
         <SessionProgress/>
-        <Form/>
       </div>
     );
   }

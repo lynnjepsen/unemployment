@@ -1,4 +1,4 @@
-// TODO: Tech debt - some of this style code is duplicated across all the sheets
+// TODO: Tech debt - this code is duplicated across all the sheets
 @import '../typography/variables';
 @import "@material/typography/mixins";
 
@@ -9,12 +9,4 @@ $layout-gutter: 16px;
 @mixin column-based-width($column-count) {
   $negative-space: $layout-margin + ($layout-gutter * ($total-column-count - 1));
   width: calc(((100% - #{$negative-space})/#{$total-column-count / $column-count}) + #{($column-count - 1) * $layout-gutter});
-}
-
-.form__questions {
-  @include column-based-width(9);
-}
-
-.form__navigator {
-  margin-top: 48px;
 }
