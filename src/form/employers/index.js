@@ -9,6 +9,10 @@ class Employers extends Component {
     super(props);
     this.state = {
       isOccupationSet: false,
+      isEmployerSet: false,
+      isEmployerAddressSet: false,
+      isWorkStartDateSet: false,
+      isWorkEndDateSet: false,
       workedOutsideCa: false,
       seasonalWork: false,
       wasInCorporation: false,
@@ -18,7 +22,11 @@ class Employers extends Component {
 
   componentDidUpdate(prevProps, prevState) {
     const isComplete = 
-      this.state.isOccupationSet;
+      this.state.isOccupationSet &&
+      this.state.isEmployerSet &&
+      this.state.isEmployerAddressSet &&
+      this.state.isWorkStartDateSet &&
+      this.state.isWorkEndDateSet;
     if (isComplete !== prevState.isComplete) {
       this.setState({isComplete:isComplete});
       if (this.props.onComplete) {
@@ -42,6 +50,24 @@ class Employers extends Component {
           <label htmlFor="employers-seasonal" className="mdc-typography--body2">Yes</label>
         </div>
         {this.renderSeasonalWorker()}
+        <TextField className="employers__name"
+          label="Employers Name"
+          question="What is the name of your employer?"
+          onUserInput={(isUserInput) => this.setState({isEmployerSet: isUserInput})}/>
+        <TextField className="employers__address"
+          label="Employers Address"
+          question="What is your employer’s mailing address?"
+          onUserInput={(isUserInput) => this.setState({isEmployerAddressSet: isUserInput})}/>
+        <div className="employers__work-date-range">
+          <TextField className="employers__work-start"
+            label="Start Date"
+            question="What was your work start date?"
+            onUserInput={(isUserInput) => this.setState({isWorkStartDateSet: isUserInput})}/>
+          <TextField className="employers__work-end"
+            label="End Date"
+            question="What was your work end date?"
+            onUserInput={(isUserInput) => this.setState({isWorkEndDateSet: isUserInput})}/>
+        </div>
         <div className="employers__last-year mdc-typography--body1">In the past 18 months</div>
         <div className="employers__outside-ca">
           <div className="mdc-typography--body2">Did you work in a state other than California?</div>

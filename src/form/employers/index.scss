@@ -17,6 +17,33 @@
   margin-top: 32px;
 } 
 
+.employers__name {
+  margin-left: $questions-layout-margin;
+  @include questions-column-based-width(6);
+  margin-top: 24px;
+}
+
+.employers__address {
+  margin-left: $questions-layout-margin;
+  @include questions-column-based-width(6);
+  margin-top: 24px;
+}
+
+.employers__work-date-range {
+  margin-top: 24px;
+  display: flex;
+}
+
+.employers__work-start {
+  margin-left: $questions-layout-margin;
+  @include questions-column-based-width(3);
+}
+
+.employers__work-end {
+  margin-left: 24px;
+  @include questions-column-based-width(3);
+}
+
 .employers__seasonal {
   margin-left: $questions-layout-margin;
   display: flex;
