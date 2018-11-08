@@ -10,6 +10,8 @@ class PersonalInformation extends Component {
       isBirthdaySet: false,
       isGenderSet: false,
       isWrittenLanguageSet: false,
+      isTelephoneNumberSet: false,
+      isMailingAddressSet: false,
       isComplete: false
     };
   }
@@ -35,10 +37,19 @@ class PersonalInformation extends Component {
           label="Gender"
           question="What is your gender?"
           onUserInput={(isUserInput) => this.setState({isGenderSet: isUserInput})}/>
-           <TextField className="personal-information__written-language"
+        <TextField className="personal-information__written-language"
           label="Written Language"
           question="What is your preferred written language?"
           onUserInput={(isUserInput) => this.setState({isBirthdaySet: isUserInput})}/>
+        <TextField className="personal-information__telephone-number"
+          label="Telephone Number"
+          question="What is your telephone number?"
+          onUserInput={(isUserInput) => this.setState({isBirthdaySet: isUserInput})}/>
+        <TextField className="personal-information__mailing-address"
+          label="Street, City, State, ZIP"
+          question="What is your mailing address?"
+          onUserInput={(isUserInput) => this.setState({isBirthdaySet: isUserInput})}/>
+        
       </div>
     );
   }

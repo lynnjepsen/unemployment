@@ -17,3 +17,15 @@
   @include questions-column-based-width(3);
   margin-top: 24px;
 }
+
+.personal-information__telephone-number {
+  margin-left: $questions-layout-margin;
+  @include questions-column-based-width(3);
+  margin-top: 24px;
+}
+
+.personal-information__mailing-address {
+  margin-left: $questions-layout-margin;
+  @include questions-column-based-width(6);
+  margin-top: 24px;
+}
