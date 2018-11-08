@@ -11,3 +11,9 @@
   @include questions-column-based-width(3);
   margin-top: 24px;
 }
+
+.personal-information__written-language {
+  margin-left: $questions-layout-margin;
+  @include questions-column-based-width(3);
+  margin-top: 24px;
+}
