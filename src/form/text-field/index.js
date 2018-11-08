@@ -15,10 +15,18 @@ class TextField extends Component {
           helperText={<HelperText persistent>{this.props.question}</HelperText>}>
           <Input
             value={this.state.value}
-            onChange={(e) => this.setState({value: e.target.value})}/>
+            onChange={(e) => this.handleChange(e)}/>
         </MaterialTextField>
       </div>
     );
+  }
+
+  handleChange(e) {
+    this.setState({value: e.target.value});
+    if (this.props.onUserInput) {
+      const isUserInput = e.target.value !== '';
+      this.props.onUserInput(isUserInput);
+    }
   }
 }
 

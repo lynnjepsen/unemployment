@@ -5,14 +5,22 @@ import Navigator from './navigator';
 import './index.scss';
 
 class Form extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      isPersonalInformationComplete: false
+    };
+  }
+
   render() {
     return (
       <div className="form">
         <div className="form__questions">
-          <PersonalInformation/>
+          <PersonalInformation onComplete={(isComplete) => this.setState({isPersonalInformationComplete: isComplete})}/>
           <IdentificatonQuestions/>
         </div>
-        <Navigator className="form__navigator"/>
+        <Navigator className="form__navigator" isPersonalInformationComplete={this.state.isPersonalInformationComplete}/>
       </div>
     );
   }
