@@ -13,6 +13,19 @@
 
 .employers__occupation {
   margin-left: $questions-layout-margin;
-  @include questions-column-based-width(3);
+  @include questions-column-based-width(6);
   margin-top: 32px;
+}
+
+.employers__outside-ca {
+  margin-left: $questions-layout-margin;
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.employers__state {
+  margin-left: $questions-layout-margin;
+  @include questions-column-based-width(6);
+  margin-top: 24px;
 }

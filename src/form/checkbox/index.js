@@ -12,12 +12,19 @@ class Checkbox extends Component {
         nativeControlId={this.props.id}
         checked={this.state.checked}
         indeterminate={this.state.indeterminate}
-        onChange={(e) => this.setState({
-          checked: e.target.checked,
-          indeterminate: e.target.indeterminate})
-        }
+        onChange={(e) => this.handleChange(e)}
       />
     );
+  }
+
+  handleChange(e) {
+    if (this.state.checked != e.target.checked) {
+      this.props.onCheck(e.target.checked);
+    }
+    this.setState({
+      checked: e.target.checked,
+      indeterminate: e.target.indeterminate
+    });
   }
 }
 
