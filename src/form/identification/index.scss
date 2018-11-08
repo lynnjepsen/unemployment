@@ -10,3 +10,45 @@
   color: $blue-900;
   @include mdc-typography(headline6);
 }
+
+.identification__birth-date {
+  margin-left: $questions-layout-margin;
+  @include questions-column-based-width(3);
+  margin-top: 32px;
+}
+
+.identification__ssn {
+  margin-left: $questions-layout-margin;
+  @include questions-column-based-width(6);
+  margin-top: 24px;
+}
+
+.identification__name-form {
+  margin-top: 24px;
+  display: flex;
+}
+
+.identification__first-name {
+  margin-left: $questions-layout-margin;
+  @include questions-column-based-width(3);
+}
+
+.identification__last-name {
+  margin-left: 16px;
+  @include questions-column-based-width(3);
+}
+
+.identification__license {
+  margin-top: 24px;
+  display: flex;
+}
+
+.identification__license-number {
+  margin-left: $questions-layout-margin;
+  @include questions-column-based-width(3);
+}
+
+.identification__issuing-state {
+  margin-left: 16px;
+  @include questions-column-based-width(3);
+}

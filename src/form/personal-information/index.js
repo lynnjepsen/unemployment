@@ -39,6 +39,7 @@ class PersonalInformation extends Component {
   render() {
     return (
       <div className="personal-information">
+        <div className="personal-information__title">Personal Information</div>
         <TextField className="personal-information__telephone-number"
           label="Telephone #"
           question="What is your telephone number?"

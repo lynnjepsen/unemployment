@@ -1,9 +1,20 @@
+@import '../../typography/variables';
+@import "@material/typography/mixins";
+@import '../../color-palette';
 @import '../questions';
+
+.personal-information__title {
+  margin-left: $questions-layout-margin;
+  @include mdc-typography-baseline-top(64px);
+  @include mdc-typography-baseline-bottom(24px);
+  color: $blue-900;
+  @include mdc-typography(headline6);
+}
 
 .personal-information__telephone-number {
   margin-left: $questions-layout-margin;
   @include questions-column-based-width(3);
-  margin-top: 64px;
+  margin-top: 32px;
 }
 
 .personal-information__gender {

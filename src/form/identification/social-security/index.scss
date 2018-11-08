@@ -1,8 +1,0 @@
-@import '../../questions';
-
-.social-security__number {
-  margin-left: $questions-layout-margin;
-  @include questions-column-based-width(3);
-  margin-top: 32px;
-}
-
