@@ -8,7 +8,7 @@
 
 .personal-information__gender {
   margin-left: $questions-layout-margin;
-  @include questions-column-based-width(3);
+  @include questions-column-based-width(6);
   margin-top: 24px;
 }
 
@@ -37,4 +37,29 @@
   margin-left: $questions-layout-margin;
   @include questions-column-based-width(6);
   margin-top: 24px;
+}
+
+.personal-information__race {
+  margin-left: $questions-layout-margin;
+  @include questions-column-based-width(6);
+  margin-top: 24px;
+}
+
+.personal-information__education {
+  margin-left: $questions-layout-margin;
+  @include questions-column-based-width(6);
+  margin-top: 24px;
+}
+
+.personal-information__communication-title {
+  margin-left: $questions-layout-margin;
+  @include questions-column-based-width(6);
+  margin-top: 24px;
+}
+
+.personal-information__communcation {
+  margin-left: $questions-layout-margin - 11px;
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
 }
