@@ -15,17 +15,65 @@
   margin-left: $questions-layout-margin;
   @include questions-column-based-width(6);
   margin-top: 32px;
-}
+} 
 
-.employers__outside-ca {
+.employers__seasonal {
   margin-left: $questions-layout-margin;
   display: flex;
   align-items: center;
   margin-top: 24px;
 }
 
+.employers__seasonal-form {
+  margin-top: 24px;
+  display: flex;
+}
+
+.employers__season-start {
+  margin-left: $questions-layout-margin;
+  @include questions-column-based-width(3);
+}
+
+.employers__season-end {
+  margin-left: 24px;
+  @include questions-column-based-width(3);
+}
+
+.employers__last-year {
+  margin-left: $questions-layout-margin;
+  @include mdc-typography-baseline-top(48px);
+  @include mdc-typography-baseline-bottom(24px);
+  color: $blue-900;
+}
+
+.employers__outside-ca {
+  margin-left: $questions-layout-margin;
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+}
+
 .employers__state {
   margin-left: $questions-layout-margin;
   @include questions-column-based-width(6);
   margin-top: 24px;
+}
+
+.employers__corporation {
+  margin-left: $questions-layout-margin;
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.employers__organization-name {
+  margin-left: $questions-layout-margin;
+  margin-top: 24px;
+  @include questions-column-based-width(6);
+}
+
+.employers__corporation-position {
+  margin-left: $questions-layout-margin;
+  margin-top: 24px;
+  @include questions-column-based-width(6);
 }
