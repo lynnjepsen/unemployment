@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import PersonalInformation from './personal-information';
-import IdentificatonQuestions from './identification';
+import Identification from './identification';
+import Employers from './employers';
 import Navigator from './navigator';
 import './index.scss';
 
@@ -10,7 +11,8 @@ class Form extends Component {
     super(props);
     this.state = {
       isPersonalInformationComplete: false,
-      isIdentificationComplete: false
+      isIdentificationComplete: false,
+      isEmployersComplete: false
     };
   }
 
@@ -19,11 +21,13 @@ class Form extends Component {
       <div className="form">
         <div className="form__questions">
           <PersonalInformation onComplete={(isComplete) => this.setState({isPersonalInformationComplete: isComplete})}/>
-          <IdentificatonQuestions  onComplete={(isComplete) => this.setState({isIdentificationComplete: isComplete})}/>
+          <Identification  onComplete={(isComplete) => this.setState({isIdentificationComplete: isComplete})}/>
+          <Employers onComplete={(isComplete) => this.setState({isEmployersComplete: isComplete})}/>
         </div>
         <Navigator className="form__navigator" 
           isPersonalInformationComplete={this.state.isPersonalInformationComplete}
-          isIdentificationComplete={this.state.isIdentificationComplete}/>
+          isIdentificationComplete={this.state.isIdentificationComplete}
+          isEmployersComplete={this.state.isEmployersComplete}/>
       </div>
     );
   }
