@@ -12,10 +12,19 @@
   margin-top: 24px;
 }
 
+.personal-information__languanges {
+  margin-top: 24px;
+  display: flex;
+}
+
 .personal-information__written-language {
   margin-left: $questions-layout-margin;
   @include questions-column-based-width(3);
-  margin-top: 24px;
+}
+
+.personal-information__spoken-language {
+  margin-left: 16px;
+  @include questions-column-based-width(3);
 }
 
 .personal-information__telephone-number {

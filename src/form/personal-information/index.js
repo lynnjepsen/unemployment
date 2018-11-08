@@ -37,18 +37,24 @@ class PersonalInformation extends Component {
           label="Gender"
           question="What is your gender?"
           onUserInput={(isUserInput) => this.setState({isGenderSet: isUserInput})}/>
-        <TextField className="personal-information__written-language"
-          label="Written Language"
-          question="What is your preferred written language?"
-          onUserInput={(isUserInput) => this.setState({isBirthdaySet: isUserInput})}/>
         <TextField className="personal-information__telephone-number"
           label="Telephone #"
           question="What is your telephone number?"
-          onUserInput={(isUserInput) => this.setState({isBirthdaySet: isUserInput})}/>
+          onUserInput={(isUserInput) => this.setState({isTelephoneNumberSet: isUserInput})}/>
+        <div className="personal-information__languanges">
+          <TextField className="personal-information__written-language"
+            label="Written Language"
+            question="What is your preferred written language?"
+            onUserInput={(isUserInput) => this.setState({isWrittenLanguageSet: isUserInput})}/>
+          <TextField className="personal-information__spoken-language"
+            label="Spoken Language"
+            question="What is your preferred spoken language?"
+            onUserInput={(isUserInput) => this.setState({isSpokenLanguageSet: isUserInput})}/>
+        </div>
         <TextField className="personal-information__mailing-address"
           label="Street, City, State, ZIP"
           question="What is your mailing address?"
-          onUserInput={(isUserInput) => this.setState({isBirthdaySet: isUserInput})}/>
+          onUserInput={(isUserInput) => this.setState({isMailingAddressSet: isUserInput})}/>
         
       </div>
     );
