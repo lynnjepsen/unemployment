@@ -1,0 +1,106 @@
+@import '../../typography/variables';
+@import "@material/typography/mixins";
+@import '../../color-palette';
+@import '../questions';
+
+.employers__title {
+  margin-left: $questions-layout-margin;
+  @include mdc-typography-baseline-top(64px);
+  @include mdc-typography-baseline-bottom(24px);
+  color: $blue-900;
+  @include mdc-typography(headline6);
+}
+
+.employers__occupation {
+  margin-left: $questions-layout-margin;
+  @include questions-column-based-width(6);
+  margin-top: 32px;
+} 
+
+.employers__name {
+  margin-left: $questions-layout-margin;
+  @include questions-column-based-width(6);
+  margin-top: 24px;
+}
+
+.employers__address {
+  margin-left: $questions-layout-margin;
+  @include questions-column-based-width(6);
+  margin-top: 24px;
+}
+
+.employers__work-date-range {
+  margin-top: 24px;
+  display: flex;
+}
+
+.employers__work-start {
+  margin-left: $questions-layout-margin;
+  @include questions-column-based-width(3);
+}
+
+.employers__work-end {
+  margin-left: 24px;
+  @include questions-column-based-width(3);
+}
+
+.employers__seasonal {
+  margin-left: $questions-layout-margin;
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.employers__seasonal-form {
+  margin-top: 24px;
+  display: flex;
+}
+
+.employers__season-start {
+  margin-left: $questions-layout-margin;
+  @include questions-column-based-width(3);
+}
+
+.employers__season-end {
+  margin-left: 24px;
+  @include questions-column-based-width(3);
+}
+
+.employers__last-year {
+  margin-left: $questions-layout-margin;
+  @include mdc-typography-baseline-top(48px);
+  @include mdc-typography-baseline-bottom(24px);
+  color: $blue-900;
+}
+
+.employers__outside-ca {
+  margin-left: $questions-layout-margin;
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.employers__state {
+  margin-left: $questions-layout-margin;
+  @include questions-column-based-width(6);
+  margin-top: 24px;
+}
+
+.employers__corporation {
+  margin-left: $questions-layout-margin;
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.employers__organization-name {
+  margin-left: $questions-layout-margin;
+  margin-top: 24px;
+  @include questions-column-based-width(6);
+}
+
+.employers__corporation-position {
+  margin-left: $questions-layout-margin;
+  margin-top: 24px;
+  @include questions-column-based-width(6);
+}

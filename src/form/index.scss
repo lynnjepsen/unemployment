@@ -11,6 +11,14 @@ $layout-gutter: 16px;
   width: calc(((100% - #{$negative-space})/#{$total-column-count / $column-count}) + #{($column-count - 1) * $layout-gutter});
 }
 
+.form {
+  background-color: #FFFFFF;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  display: flex;
+  margin-bottom: 108px;
+}
+
 .form__questions {
   @include column-based-width(9);
 }

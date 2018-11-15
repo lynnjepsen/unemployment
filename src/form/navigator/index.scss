@@ -9,6 +9,10 @@ $indicator-size: 16px;
   align-items: start;
 }
 
+.navigator--fixed {
+  position: fixed;
+}
+
 .navigator__question-set {
   display: flex;
   align-items: center;

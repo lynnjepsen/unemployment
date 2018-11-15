@@ -1,19 +1,70 @@
+@import '../../typography/variables';
+@import "@material/typography/mixins";
+@import '../../color-palette';
 @import '../questions';
 
-.personal-information__birth-date {
+.personal-information__title {
+  margin-left: $questions-layout-margin;
+  @include mdc-typography-baseline-top(64px);
+  @include mdc-typography-baseline-bottom(24px);
+  color: $blue-900;
+  @include mdc-typography(headline6);
+}
+
+.personal-information__telephone-number {
   margin-left: $questions-layout-margin;
   @include questions-column-based-width(3);
-  margin-top: 64px;
+  margin-top: 32px;
 }
 
 .personal-information__gender {
   margin-left: $questions-layout-margin;
-  @include questions-column-based-width(3);
+  @include questions-column-based-width(6);
   margin-top: 24px;
+}
+
+.personal-information__languanges {
+  margin-top: 24px;
+  display: flex;
 }
 
 .personal-information__written-language {
   margin-left: $questions-layout-margin;
   @include questions-column-based-width(3);
+}
+
+.personal-information__spoken-language {
+  margin-left: 16px;
+  @include questions-column-based-width(3);
+}
+
+.personal-information__mailing-address {
+  margin-left: $questions-layout-margin;
+  @include questions-column-based-width(6);
   margin-top: 24px;
+}
+
+.personal-information__race {
+  margin-left: $questions-layout-margin;
+  @include questions-column-based-width(6);
+  margin-top: 24px;
+}
+
+.personal-information__education {
+  margin-left: $questions-layout-margin;
+  @include questions-column-based-width(6);
+  margin-top: 24px;
+}
+
+.personal-information__communication-title {
+  margin-left: $questions-layout-margin;
+  @include questions-column-based-width(6);
+  margin-top: 40px;
+}
+
+.personal-information__communcation {
+  margin-left: $questions-layout-margin - 11px;
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
 }
